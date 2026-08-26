@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reshad – Portfolio</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<a href="#home" class="logo">Reshad</a>
+
+				<ul class="nav-links" id="navLinks">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">Über mich</a></li>
+					<li><a href="#projects">Projekte</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#contact">Kontakt</a></li>
+				</ul>
+
+				<div class="nav-actions">
+					<button
+						class="theme-toggle"
+						id="themeToggle"
+						aria-label="Farbmodus wechseln">
+						<span class="icon-sun">Light</span>
+						<span class="icon-moon">Dark</span>
+					</button>
+
+					<button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section id="home" class="home">
+				<div class="home-inner">
+					<h1>Hi, ich bin <span class="accent">Reshad</span></h1>
+					<p>Webentwickler mit Fokus auf Frontend & moderne Web-Apps.</p>
+					<a href="#projects" class="btn-primary" data-nav>Meine Projekte</a>
+				</div>
+			</section>
+
+			<section id="about" class="about">
+				<div class="about-inner">
+					<h2>Über mich</h2>
+					<p>
+						Ich bin ein motivierter Entwickler und arbeite gerne an Projekten
+						mit modernen Web-Technologien. Hier kannst du ein paar Sätze über
+						dich, deine Erfahrung und deine Ziele schreiben.
+					</p>
+				</div>
+			</section>
+
+			<section id="projects" class="projects">
+				<div class="projects-header">
+					<h2>Projekte</h2>
+					<p>Eine Auswahl an Projekten, an denen ich gearbeitet habe.</p>
+				</div>
+
+				<div class="projects-grid">
+					<article class="project-card">
+						<div class="project-tag">Web-App</div>
+						<h3>Monty</h3>
+						<p>
+							Ein Beispielprojekt, bei dem ich an der Entwicklung mitgewirkt
+							habe. Hier kannst du kurz beschreiben, was Monty macht und welche
+							Rolle du hattest.
+						</p>
+						<div class="project-tech">
+							<span>HTML</span>
+							<span>CSS</span>
+							<span>JavaScript</span>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<div class="project-tag">Team-Projekt</div>
+						<h3>Apps-Team</h3>
+						<p>
+							Im Apps-Team habe ich gemeinsam mit anderen an Anwendungen
+							gearbeitet. Beschreibe hier deine Aufgaben und die verwendeten
+							Technologien.
+						</p>
+						<div class="project-tech">
+							<span>Backend</span>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<div class="project-tag">Projekt</div>
+						<h3>Galiese</h3>
+						<p>
+							Galiese ist ein weiteres Projekt aus meiner Laufbahn. Ergänze hier
+							ein paar Sätze zu Ziel, Umfang und deinem Beitrag.
+						</p>
+						<div class="project-tech">
+							<span>TypeScript</span>
+							<span>Übungen</span>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<div class="project-tag">FullStack</div>
+						<h3>NexCC</h3>
+						<p>
+							Bei NexCC war ich an der Umsetzung beteiligt. Hier lässt sich
+							beschreiben, worum es bei dem Projekt ging und was du beigetragen
+							hast.
+						</p>
+						<div class="project-tech">
+							<span>Java</span>
+							<span>Vue</span>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section id="skills" class="skills">
+				<div class="skills-header">
+					<h2>Skills</h2>
+					<p>Technologien und Sprachen, mit denen ich arbeite.</p>
+				</div>
+
+				<div class="skills-grid">
+					<span class="skill-chip">HTML</span>
+					<span class="skill-chip">CSS</span>
+					<span class="skill-chip">Grid</span>
+					<span class="skill-chip">JavaScript</span>
+					<span class="skill-chip">React</span>
+					<span class="skill-chip">Next.js</span>
+					<span class="skill-chip">SQL</span>
+					<span class="skill-chip">Java</span>
+					<span class="skill-chip">Angular</span>
+					<span class="skill-chip">Vue</span>
+					<span class="skill-chip">C# (Grundlagen)</span>
+				</div>
+			</section>
+
+			<section id="contact" class="contact">
+				<div class="contact-header">
+					<h2>Kontakt</h2>
+					<p>Lass uns zusammenarbeiten! Schreib mir gerne eine Nachricht.</p>
+				</div>
+
+				<div class="contact-grid">
+					<form class="contact-form" id="contactForm" novalidate>
+						<div class="form-group">
+							<label for="name">Dein Name</label>
+							<input
+								type="text"
+								id="name"
+								name="name"
+								placeholder="Max Mustermann"
+								required />
+							<span class="error-message" id="nameError"></span>
+						</div>
+
+						<div class="form-group">
+							<label for="email">Deine E-Mail</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="max@beispiel.de"
+								required />
+							<span class="error-message" id="emailError"></span>
+						</div>
+
+						<div class="form-group">
+							<label for="message">Deine Nachricht</label>
+							<textarea
+								id="message"
+								name="message"
+								rows="5"
+								placeholder="Deine Nachricht..."
+								required></textarea>
+							<span class="error-message" id="messageError"></span>
+						</div>
+
+						<button type="submit" class="btn-submit">Senden &rarr;</button>
+						<p class="form-status" id="formStatus"></p>
+					</form>
+
+					<aside class="contact-info">
+						<h3>Schreib mir</h3>
+
+						<a href="mailto:reshad.mandozai@swisscom.com" class="info-item">
+							<span class="info-icon">📧</span>
+							<span>
+								<strong>E-Mail</strong><br />
+								reshad.mandozai@swisscom.com
+							</span>
+						</a>
+
+						<div class="info-item">
+							<span class="info-icon">📍</span>
+							<span>
+								<strong>Standort</strong><br />
+								Stadt, Deutschland
+							</span>
+						</div>
+
+						<h4>Folge mir</h4>
+						<div class="social-links">
+							<a
+								href="https://www.linkedin.com/in/reshad-mandozai-189538322/"
+								target="_blank"
+								rel="noopener"
+								class="social-card"
+								aria-label="LinkedIn">
+								<span>in</span>
+								<small>LinkedIn</small>
+							</a>
+							<a
+								href="https://github.com/reshadmandozai39-jpg"
+								target="_blank"
+								rel="noopener"
+								class="social-card"
+								aria-label="GitHub">
+								<span>GH</span>
+								<small>GitHub</small>
+							</a>
+							<a
+								href="mailto:reshad.mandozai@swisscom.com"
+								class="social-card"
+								aria-label="E-Mail">
+								<span>✉</span>
+								<small>Mail</small>
+							</a>
+						</div>
+					</aside>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer-inner">
+				<div class="footer-col">
+					<h4>Kontakt</h4>
+					<ul>
+						<li>
+							<a href="mailto:reshad.mandozai@swisscom.com">
+								reshad.mandozai@swisscom.com
+							</a>
+						</li>
+						<li>Stadt, Deutschland</li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<h4>Folge mir</h4>
+					<div class="footer-social">
+						<a
+							href="https://www.linkedin.com/in/reshad-mandozai-189538322/"
+							target="_blank"
+							rel="noopener"
+							aria-label="LinkedIn">
+							in
+						</a>
+						<a
+							href="https://github.com/reshadmandozai39-jpg"
+							target="_blank"
+							rel="noopener"
+							aria-label="GitHub">
+							GH
+						</a>
+						<a href="mailto:reshad.mandozai@swisscom.com" aria-label="E-Mail">
+							✉
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p>&copy; <span id="year"></span> Reshad. Alle Rechte vorbehalten.</p>
+			</div>
+		</footer>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
