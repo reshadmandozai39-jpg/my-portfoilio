@@ -2,6 +2,13 @@
 
 Persönliches Portfolio mit Projekten, Skills und Kontaktmöglichkeiten.
 
+## Kontaktformular
+
+Das Kontaktformular übermittelt Nachrichten über FormSubmit an die konfigurierte
+Empfängeradresse. Beim ersten Versand muss die Empfängeradresse den
+Aktivierungslink von FormSubmit bestätigen. Formulardaten werden dabei an den
+Dienst FormSubmit weitergegeben.
+
 ## Skills
 
 Die [Skills-Seite](skills/index.html) zeigt Hard Skills mit kurzen Beschreibungen

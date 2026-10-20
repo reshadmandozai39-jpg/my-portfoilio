@@ -22,7 +22,20 @@ const translations = {
 		'home.selectedTitle': 'Dall’idea all’applicazione.',
 		'home.allProjects': 'Tutti i progetti',
 		'about.title': 'Chi sono',
-		'about.description': 'Mi interessa sviluppare applicazioni digitali utili e intuitive. Lavoro con tecnologie web moderne e continuo ad ampliare le mie competenze tra frontend, backend e sviluppo di applicazioni.',
+		'about.kicker': 'FORMAZIONE E FOCUS',
+		'about.description': 'Sono un apprendista informatico al secondo anno e frequento la scuola professionale GIBB di Berna. Un anno preparatorio nel settore IT mi ha permesso di fare le prime esperienze pratiche. Oggi mi concentro sulle applicazioni web, dallo sviluppo backend con NestJS fino al frontend con React.',
+		'about.skillsTitle': 'Competenze tecniche',
+		'about.skillsIntro': 'Le tecnologie con cui lavoro nella formazione e nei progetti.',
+		'about.backendTitle': 'Backend',
+		'about.backendSkills': 'NestJS, API REST, database e logica server',
+		'about.fullstackTitle': 'Full-stack',
+		'about.fullstackSkills': 'Java e React, integrazione tra frontend e backend, applicazioni web',
+		'about.otherTitle': 'Soft skills',
+		'about.otherSkills': 'Risoluzione dei problemi, lavoro di squadra, comunicazione, apprendimento rapido, gestione dei progetti, sensibilità UI/UX e autonomia',
+		'about.personalTitle': 'Oltre l’informatica',
+		'about.hobbies': 'Nel tempo libero mi dedico volentieri allo sport: ping-pong, badminton e scacchi. Mi piace anche programmare e leggere libri su tecnologia e crescita personale. Amo imparare cose nuove, sia nello sport sia nei progetti creativi.',
+		'about.goalsTitle': 'Obiettivi',
+		'about.goals': 'Voglio crescere costantemente come sviluppatore software e acquisire esperienza pratica in progetti stimolanti. Il mio obiettivo è creare soluzioni digitali moderne che rendano più semplice la vita quotidiana.',
 		'projects.title': 'Progetti',
 		'projects.intro': 'Una selezione di progetti a cui ho lavorato.',
 		'projects.webApp': 'Applicazione web',
@@ -78,6 +91,7 @@ const translations = {
 		'contact.title': 'Contatti',
 		'contact.intro': 'Collaboriamo! Scrivimi un messaggio.',
 		'contact.infoText': 'Hai un progetto o una domanda? Scrivimi, ti rispondo il prima possibile.',
+		'contact.formNotice': 'Il tuo messaggio viene inviato tramite il servizio esterno FormSubmit.',
 		'contact.name': 'Il tuo nome',
 		'contact.namePlaceholder': 'Mario Rossi',
 		'contact.email': 'E-mail',
@@ -94,8 +108,6 @@ const translations = {
 		'form.nameRequired': 'Inserisci il tuo nome.',
 		'form.emailInvalid': 'Inserisci un indirizzo e-mail valido.',
 		'form.messageRequired': 'Scrivi un messaggio.',
-		'form.mailClient': 'Si sta aprendo il tuo programma di posta. Ricordati di premere «Invia».',
-		'form.subject': 'Messaggio portfolio da',
 		'page.home': 'Reshad – Portfolio',
 		'page.about': 'Chi sono – Reshad',
 		'page.projects': 'Progetti – Reshad',
@@ -125,7 +137,20 @@ const translations = {
 		'home.selectedTitle': 'From idea to application.',
 		'home.allProjects': 'All projects',
 		'about.title': 'About me',
-		'about.description': 'I am interested in building useful, intuitive digital applications. I work with modern web technologies and continue to grow my skills across frontend, backend, and application development.',
+		'about.kicker': 'EDUCATION & FOCUS',
+		'about.description': 'I am a second-year apprentice in computer science and attend the GIBB vocational school in Bern. A preparatory year in IT gave me my first hands-on experience. Today I focus on web applications, from backend development with NestJS to frontend work with React.',
+		'about.skillsTitle': 'Technical skills',
+		'about.skillsIntro': 'The technologies I work with in my training and projects.',
+		'about.backendTitle': 'Backend',
+		'about.backendSkills': 'NestJS, REST APIs, databases and server-side logic',
+		'about.fullstackTitle': 'Full-stack',
+		'about.fullstackSkills': 'Java and React, frontend–backend integration and web applications',
+		'about.otherTitle': 'Soft skills',
+		'about.otherSkills': 'Problem-solving, teamwork, communication, fast learning, project management, UI/UX awareness and independent work',
+		'about.personalTitle': 'Beyond the code',
+		'about.hobbies': 'In my free time I enjoy sports: table tennis, badminton and chess. I also like programming and reading books about technology and personal development. I love learning new things, both in sports and in creative projects.',
+		'about.goalsTitle': 'Goals',
+		'about.goals': 'I want to keep growing as a software developer and gain practical experience in challenging projects. My aim is to build digital solutions that make everyday life easier for people.',
 		'projects.title': 'Projects',
 		'projects.intro': 'A selection of projects I have worked on.',
 		'projects.webApp': 'Web app',
@@ -181,6 +206,7 @@ const translations = {
 		'contact.title': 'Contact',
 		'contact.intro': "Let's work together! Feel free to send me a message.",
 		'contact.infoText': 'Have a project or a question? Write to me and I’ll get back to you as soon as possible.',
+		'contact.formNotice': 'Your message is sent through the third-party service FormSubmit.',
 		'contact.name': 'Your name',
 		'contact.namePlaceholder': 'Jane Doe',
 		'contact.email': 'Email',
@@ -197,8 +223,6 @@ const translations = {
 		'form.nameRequired': 'Please enter your name.',
 		'form.emailInvalid': 'Please enter a valid email address.',
 		'form.messageRequired': 'Please write a message.',
-		'form.mailClient': 'Your email app is opening. Please remember to click “Send”.',
-		'form.subject': 'Portfolio message from',
 		'page.home': 'Reshad – Portfolio',
 		'page.about': 'About me – Reshad',
 		'page.projects': 'Projects – Reshad',
@@ -228,7 +252,20 @@ const translations = {
 		'home.selectedTitle': 'Von der Idee zur Anwendung.',
 		'home.allProjects': 'Alle Projekte',
 		'about.title': 'Über mich',
-		'about.description': 'Mich begeistert die Entwicklung nützlicher und intuitiver Anwendungen. Ich arbeite mit modernen Web-Technologien und erweitere meine Kenntnisse in Frontend, Backend und Application Development kontinuierlich.',
+		'about.kicker': 'AUSBILDUNG & FOKUS',
+		'about.description': 'Ich bin im zweiten Lehrjahr zum Informatiker und besuche die GIBB Berufsfachschule in Bern. Bereits während eines Vorlehrjahres im IT-Bereich konnte ich erste praktische Erfahrungen sammeln. Heute liegt mein Schwerpunkt auf Webanwendungen, vom Backend mit NestJS bis zum Frontend mit React.',
+		'about.skillsTitle': 'Fachliche Kenntnisse',
+		'about.skillsIntro': 'Womit ich in Ausbildung und Projekten arbeite.',
+		'about.backendTitle': 'Backend',
+		'about.backendSkills': 'NestJS, REST-APIs, Datenbanken und serverseitige Logik',
+		'about.fullstackTitle': 'Fullstack',
+		'about.fullstackSkills': 'Java und React, die Anbindung zwischen Frontend und Backend sowie Webanwendungen',
+		'about.otherTitle': 'Soft Skills',
+		'about.otherSkills': 'Problemlösung, Teamarbeit, Kommunikation, rasches Lernen, Projektmanagement, UI/UX-Verständnis und selbstständiges Arbeiten',
+		'about.personalTitle': 'Abseits der Informatik',
+		'about.hobbies': 'In meiner Freizeit bin ich gerne sportlich unterwegs: Ich spiele Tischtennis und Badminton und messe mich gern am Schachbrett. Ich programmiere auch privat gern und lese Bücher über Technologie und persönliche Entwicklung. Am liebsten lerne ich Neues, ob im Sport oder in kreativen Projekten.',
+		'about.goalsTitle': 'Ziele',
+		'about.goals': 'Ich möchte mich als Softwareentwickler stetig weiterentwickeln und in anspruchsvollen Projekten praktische Erfahrung sammeln. Mein Ziel ist es, digitale Lösungen zu bauen, die den Alltag von Menschen einfacher machen.',
 		'projects.title': 'Projekte',
 		'projects.intro': 'Eine Auswahl an Projekten, an denen ich gearbeitet habe.',
 		'projects.webApp': 'Web-App',
@@ -284,6 +321,7 @@ const translations = {
 		'contact.title': 'Kontakt',
 		'contact.intro': 'Lass uns zusammenarbeiten! Schreib mir gerne eine Nachricht.',
 		'contact.infoText': 'Du hast ein Projekt oder eine Frage? Schreib mir einfach, ich melde mich so schnell wie möglich.',
+		'contact.formNotice': 'Deine Nachricht wird über den externen Dienst FormSubmit übermittelt.',
 		'contact.name': 'Dein Name',
 		'contact.namePlaceholder': 'Max Mustermann',
 		'contact.email': 'Deine E-Mail',
@@ -300,8 +338,6 @@ const translations = {
 		'form.nameRequired': 'Bitte gib deinen Namen ein.',
 		'form.emailInvalid': 'Bitte gib eine gültige E-Mail-Adresse ein.',
 		'form.messageRequired': 'Bitte schreib eine Nachricht.',
-		'form.mailClient': 'Dein E-Mail-Programm wird geöffnet. Bitte noch auf „Senden“ klicken.',
-		'form.subject': 'Portfolio-Kontakt von',
 		'page.home': 'Reshad – Portfolio',
 		'page.about': 'Über mich – Reshad',
 		'page.projects': 'Projekte – Reshad',
@@ -331,7 +367,20 @@ const translations = {
 		'home.selectedTitle': 'De l’idée à l’application.',
 		'home.allProjects': 'Tous les projets',
 		'about.title': 'À propos de moi',
-		'about.description': 'Je m’intéresse au développement d’applications numériques utiles et intuitives. Je travaille avec des technologies web modernes et continue à développer mes compétences en frontend, backend et développement d’applications.',
+		'about.kicker': 'FORMATION ET SPÉCIALITÉ',
+		'about.description': 'Je suis en deuxième année d’apprentissage en informatique et je fréquente l’école professionnelle GIBB à Berne. Une année préparatoire dans le domaine informatique m’a permis d’acquérir mes premières expériences pratiques. Aujourd’hui, je me concentre sur les applications web, du backend avec NestJS jusqu’au frontend avec React.',
+		'about.skillsTitle': 'Compétences techniques',
+		'about.skillsIntro': 'Les technologies avec lesquelles je travaille dans ma formation et mes projets.',
+		'about.backendTitle': 'Backend',
+		'about.backendSkills': 'NestJS, API REST, bases de données et logique serveur',
+		'about.fullstackTitle': 'Full-stack',
+		'about.fullstackSkills': 'Java et React, intégration frontend-backend, applications web',
+		'about.otherTitle': 'Soft skills',
+		'about.otherSkills': 'Résolution de problèmes, travail d’équipe, communication, apprentissage rapide, gestion de projet, sensibilité UI/UX et autonomie',
+		'about.personalTitle': 'En dehors de l’informatique',
+		'about.hobbies': 'Pendant mon temps libre, je pratique volontiers du sport : ping-pong, badminton et échecs. J’aime aussi programmer et lire des livres sur la technologie et le développement personnel. J’aime apprendre de nouvelles choses, dans le sport comme dans mes projets créatifs.',
+		'about.goalsTitle': 'Objectifs',
+		'about.goals': 'Je souhaite continuer à progresser en tant que développeur logiciel et acquérir une expérience concrète dans des projets stimulants. Mon objectif est de créer des solutions numériques modernes qui facilitent le quotidien.',
 		'projects.title': 'Projets',
 		'projects.intro': 'Une sélection de projets sur lesquels j’ai travaillé.',
 		'projects.webApp': 'Application web',
@@ -387,6 +436,7 @@ const translations = {
 		'contact.title': 'Contact',
 		'contact.intro': 'Travaillons ensemble ! N’hésitez pas à m’envoyer un message.',
 		'contact.infoText': 'Vous avez un projet ou une question ? Écrivez-moi, je vous répondrai dès que possible.',
+		'contact.formNotice': 'Votre message est transmis via le service tiers FormSubmit.',
 		'contact.name': 'Votre nom',
 		'contact.namePlaceholder': 'Jean Dupont',
 		'contact.email': 'Votre e-mail',
@@ -403,8 +453,6 @@ const translations = {
 		'form.nameRequired': 'Veuillez saisir votre nom.',
 		'form.emailInvalid': 'Veuillez saisir une adresse e-mail valide.',
 		'form.messageRequired': 'Veuillez écrire un message.',
-		'form.mailClient': 'Votre application de messagerie va s’ouvrir. Pensez à cliquer sur « Envoyer ».',
-		'form.subject': 'Message depuis le portfolio de',
 		'page.home': 'Reshad – Portfolio',
 		'page.about': 'À propos – Reshad',
 		'page.projects': 'Projets – Reshad',
@@ -584,7 +632,6 @@ themeToggle.addEventListener('click', () => {
 
 // ===== Kontaktformular =====
 const contactForm = document.getElementById('contactForm');
-const formStatus = document.getElementById('formStatus');
 
 const setError = (id, msg) => {
 	document.getElementById(id + 'Error').textContent = msg;
@@ -593,8 +640,6 @@ const setError = (id, msg) => {
 const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
 contactForm?.addEventListener('submit', (e) => {
-	e.preventDefault();
-
 	const name = document.getElementById('name');
 	const email = document.getElementById('email');
 	const message = document.getElementById('message');
@@ -603,9 +648,6 @@ contactForm?.addEventListener('submit', (e) => {
 	setError('name', '');
 	setError('email', '');
 	setError('message', '');
-	formStatus.textContent = '';
-	formStatus.classList.remove('success');
-
 	if (name.value.trim() === '') {
 		setError('name', translations[currentLanguage]['form.nameRequired']);
 		valid = false;
@@ -619,17 +661,8 @@ contactForm?.addEventListener('submit', (e) => {
 		valid = false;
 	}
 
-	if (valid) {
-		const recipient = 'reshad.mandozai@swisscom.com';
-		const subject = `${translations[currentLanguage]['form.subject']} ${name.value.trim()}`;
-		const body = `Name: ${name.value.trim()}\nE-Mail: ${email.value.trim()}\n\n${message.value.trim()}`;
-		const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-		window.location.href = mailtoLink;
-
-		formStatus.textContent = translations[currentLanguage]['form.mailClient'];
-		formStatus.classList.add('success');
-		contactForm.reset();
+	if (!valid) {
+		e.preventDefault();
 	}
 });
 

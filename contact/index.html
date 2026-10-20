@@ -54,7 +54,13 @@
 				</div>
 
 				<div class="contact-grid">
-					<form class="contact-form" id="contactForm" novalidate>
+					<form
+						class="contact-form"
+						id="contactForm"
+						action="https://formsubmit.co/reshad.mandozai@swisscom.com"
+						method="POST"
+						novalidate>
+						<input type="hidden" name="_subject" value="Portfolio contact message" />
 						<div class="form-group">
 							<label for="name" data-i18n="contact.name">Dein Name</label>
 							<input
@@ -92,7 +98,9 @@
 						</div>
 
 						<button type="submit" class="btn-submit" data-i18n="contact.submit">Senden &rarr;</button>
-						<p class="form-status" id="formStatus"></p>
+						<p class="form-status" data-i18n="contact.formNotice">
+							Deine Nachricht wird über den externen Dienst FormSubmit übermittelt.
+						</p>
 					</form>
 
 					<aside class="contact-info">
