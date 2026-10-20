@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Kontakt – Reshad</title>
+		<script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');</script>
 		<link rel="stylesheet" href="../css/style.css" />
 	</head>
 	<body>
@@ -31,8 +32,9 @@
 						id="themeToggle"
 						aria-label="Farbmodus wechseln"
 						data-i18n-aria-label="theme.toggle">
-						<span class="icon-sun" data-i18n="theme.light">Light</span>
-						<span class="icon-moon" data-i18n="theme.dark">Dark</span>
+						<svg class="theme-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></svg>
+						<svg class="theme-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+						<span class="theme-thumb" aria-hidden="true"></span>
 					</button>
 
 					<button class="hamburger" id="hamburger" aria-label="Menü öffnen" data-i18n-aria-label="nav.openMenu">
@@ -97,18 +99,14 @@
 						<h3 data-i18n="contact.writeMe">Schreib mir</h3>
 
 						<a href="mailto:reshad.mandozai@swisscom.com" class="info-item">
+							<span class="info-icon" aria-hidden="true">@</span>
 							<span>
 								<strong data-i18n="contact.email">E-Mail</strong><br />
 								reshad.mandozai@swisscom.com
 							</span>
 						</a>
 
-						<div class="info-item">
-							<span>
-								<strong data-i18n="contact.location">Standort</strong><br />
-								<span data-i18n="footer.location">Stadt, Deutschland</span>
-							</span>
-						</div>
+						<p class="info-text" data-i18n="contact.infoText">Du hast ein Projekt oder eine Frage? Schreib mir einfach, ich melde mich so schnell wie möglich.</p>
 
 						<h4 data-i18n="footer.follow">Folge mir</h4>
 						<div class="social-links">
@@ -118,6 +116,7 @@
 								rel="noopener"
 								class="social-card"
 								aria-label="LinkedIn">
+								<span class="social-mark" aria-hidden="true">in</span>
 								<small>LinkedIn</small>
 							</a>
 							<a
@@ -126,12 +125,14 @@
 								rel="noopener"
 								class="social-card"
 								aria-label="GitHub">
+								<span class="social-mark" aria-hidden="true">GH</span>
 								<small>GitHub</small>
 							</a>
 							<a
 								href="mailto:reshad.mandozai@swisscom.com"
 								class="social-card"
 								aria-label="E-Mail">
+								<span class="social-mark" aria-hidden="true">@</span>
 								<small data-i18n="contact.email">E-Mail</small>
 							</a>
 						</div>
@@ -150,7 +151,6 @@
 								reshad.mandozai@swisscom.com
 							</a>
 						</li>
-						<li data-i18n="footer.location">Stadt, Deutschland</li>
 						<li>
 							<a
 								href="https://neli.swisscom.com/profile/%5Bme%5D/detail?activeTab=info"

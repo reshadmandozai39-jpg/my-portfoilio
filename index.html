@@ -3,7 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Reshad – Portfolio</title>
+		<title>Reshad Mandozai – Application Developer</title>
+		<meta
+			name="description"
+			content="Portfolio von Reshad Mandozai, Application Developer mit Interesse an modernen Webanwendungen und durchdachten digitalen Produkten." />
+		<script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');</script>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
@@ -31,8 +35,9 @@
 						id="themeToggle"
 						aria-label="Farbmodus wechseln"
 						data-i18n-aria-label="theme.toggle">
-						<span class="icon-sun" data-i18n="theme.light">Light</span>
-						<span class="icon-moon" data-i18n="theme.dark">Dark</span>
+						<svg class="theme-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></svg>
+						<svg class="theme-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+						<span class="theme-thumb" aria-hidden="true"></span>
 					</button>
 
 					<button class="hamburger" id="hamburger" aria-label="Menü öffnen" data-i18n-aria-label="nav.openMenu">
@@ -46,10 +51,89 @@
 
 		<main>
 			<section id="home" class="home">
-				<div class="home-inner">
-					<h1><span data-i18n="home.greeting">Hi, ich bin</span> <span class="accent">Reshad</span></h1>
-					<p data-i18n="home.description">Webentwickler mit Fokus auf Frontend & moderne Web-Apps.</p>
-					<a href="projects/index.html" class="btn-primary" data-i18n="home.projects">Meine Projekte</a>
+				<div class="hero-shell">
+					<div class="home-copy">
+						<p class="eyebrow"><span class="availability-dot"></span><span data-i18n="home.eyebrow">APPLICATION DEVELOPMENT · PORTFOLIO</span></p>
+						<h1>
+							<span data-i18n="home.greeting">Hi, ich bin</span>
+							<span class="accent">Reshad</span><span class="name-period">.</span>
+						</h1>
+						<h2 data-i18n="home.role">Application Developer</h2>
+						<p class="home-description" data-i18n="home.description">
+							Ich entwickle durchdachte digitale Lösungen und moderne Webanwendungen – mit Blick fürs Detail und Freude an sauberem Code.
+						</p>
+						<div class="hero-actions">
+							<a href="projects/index.html" class="btn-primary" data-i18n="home.projects">Projekte entdecken <span aria-hidden="true">↗</span></a>
+							<a href="contact/index.html" class="btn-secondary" data-i18n="home.contact">Kontakt aufnehmen</a>
+						</div>
+						<div class="hero-footnote">
+							<span data-i18n="home.focusLabel">Fokus</span>
+							<span>Web Applications</span>
+							<span class="footnote-divider" aria-hidden="true"></span>
+							<span>Frontend · Backend</span>
+						</div>
+					</div>
+
+					<div class="hero-visual" role="img" aria-label="Entwicklerprofil" data-i18n-aria-label="home.profileLabel">
+						<div class="profile-card">
+							<div class="profile-card-top">
+								<div class="window-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+								<span data-i18n="home.profileLabel">Entwicklerprofil</span>
+								<span class="profile-card-mark" aria-hidden="true">R.</span>
+							</div>
+							<div class="profile-card-body">
+								<p class="code-comment" data-i18n="home.codeComment">// Kurz zu meiner Arbeitsweise</p>
+								<p><span class="code-key">const</span> <span class="code-variable">developer</span> = {</p>
+								<p class="code-line"><span class="code-property">name</span>: <span class="code-string">"Reshad Mandozai"</span>,</p>
+								<p class="code-line"><span class="code-property">focus</span>: [</p>
+								<p class="code-line code-indent"><span class="code-string">"Application Development"</span>,</p>
+								<p class="code-line code-indent"><span class="code-string">"Modern Web Apps"</span></p>
+								<p class="code-line">],</p>
+								<p class="code-line"><span class="code-property">mindset</span>: <span class="code-string">"build with purpose"</span></p>
+								<p>};</p>
+								<div class="profile-divider"></div>
+								<div class="profile-stack">
+									<span>JavaScript</span><span>Java</span><span>Vue</span><span>SQL</span>
+								</div>
+							</div>
+							<div class="profile-card-bottom">
+								<span class="availability-dot"></span>
+								<span data-i18n="home.profileCaption">Neugierig. Lösungsorientiert. Lernbereit.</span>
+							</div>
+						</div>
+						<div class="hero-orbit orbit-one" aria-hidden="true"></div>
+						<div class="hero-orbit orbit-two" aria-hidden="true"></div>
+					</div>
+				</div>
+
+				<div class="home-projects">
+					<div class="section-heading">
+						<div>
+							<p class="eyebrow" data-i18n="home.selectedLabel">AUSGEWÄHLTE ARBEITEN</p>
+							<h2 data-i18n="home.selectedTitle">Von der Idee zur Anwendung.</h2>
+						</div>
+						<a href="projects/index.html" class="text-link" data-i18n="home.allProjects">Alle Projekte <span aria-hidden="true">↗</span></a>
+					</div>
+					<div class="home-project-grid">
+						<a class="home-project-card" href="projects/index.html">
+							<span class="home-project-number">01</span>
+							<span class="home-project-name">Monty</span>
+							<span class="home-project-type" data-i18n="projects.webApp">Web-App</span>
+							<span class="home-project-arrow" aria-hidden="true">↗</span>
+						</a>
+						<a class="home-project-card" href="projects/index.html">
+							<span class="home-project-number">02</span>
+							<span class="home-project-name">Galiese</span>
+							<span class="home-project-type">TypeScript</span>
+							<span class="home-project-arrow" aria-hidden="true">↗</span>
+						</a>
+						<a class="home-project-card" href="projects/index.html">
+							<span class="home-project-number">03</span>
+							<span class="home-project-name">NexCC</span>
+							<span class="home-project-type">Java · Vue</span>
+							<span class="home-project-arrow" aria-hidden="true">↗</span>
+						</a>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -64,7 +148,6 @@
 								reshad.mandozai@swisscom.com
 							</a>
 						</li>
-						<li data-i18n="footer.location">Stadt, Deutschland</li>
 						<li>
 							<a
 								href="https://neli.swisscom.com/profile/%5Bme%5D/detail?activeTab=info"

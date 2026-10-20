@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Skills – Reshad</title>
+		<script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');</script>
 		<link rel="stylesheet" href="../css/style.css" />
 	</head>
 	<body>
@@ -31,8 +32,9 @@
 						id="themeToggle"
 						aria-label="Farbmodus wechseln"
 						data-i18n-aria-label="theme.toggle">
-						<span class="icon-sun" data-i18n="theme.light">Light</span>
-						<span class="icon-moon" data-i18n="theme.dark">Dark</span>
+						<svg class="theme-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></svg>
+						<svg class="theme-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+						<span class="theme-thumb" aria-hidden="true"></span>
 					</button>
 
 					<button class="hamburger" id="hamburger" aria-label="Menü öffnen" data-i18n-aria-label="nav.openMenu">
@@ -47,23 +49,129 @@
 		<main>
 			<section id="skills" class="skills">
 				<div class="skills-header">
-					<h2 data-i18n="skills.title">Skills</h2>
-					<p data-i18n="skills.intro">Technologien und Sprachen, mit denen ich arbeite.</p>
+					<p class="skills-eyebrow" data-i18n="skills.eyebrow">WAS ICH MITBRINGE</p>
+					<h1 data-i18n="skills.title">Skills</h1>
+					<p data-i18n="skills.intro">Mein Wissen aus Schule, ÜK und Projekten – und die Stärken, die meine Arbeit prägen.</p>
 				</div>
 
-				<div class="skills-grid">
-					<span class="skill-chip">HTML</span>
-					<span class="skill-chip">CSS</span>
-					<span class="skill-chip">Grid</span>
-					<span class="skill-chip">JavaScript</span>
-					<span class="skill-chip">React</span>
-					<span class="skill-chip">Next.js</span>
-					<span class="skill-chip">SQL</span>
-					<span class="skill-chip">Java</span>
-					<span class="skill-chip">Angular</span>
-					<span class="skill-chip">Vue</span>
-					<span class="skill-chip" data-i18n="skills.csharp">C# (Grundlagen)</span>
-				</div>
+				<section class="skill-group" aria-labelledby="hard-skills-title">
+					<div class="skill-group-header">
+						<span class="skill-group-number" aria-hidden="true">01</span>
+						<div>
+							<h2 id="hard-skills-title">Hard Skills</h2>
+							<p data-i18n="skills.hardIntro">Technisches Wissen, das ich anwende und weiterentwickle.</p>
+						</div>
+					</div>
+					<div class="skills-grid">
+						<article class="skill-card">
+							<span class="skill-level" data-i18n="skills.good">Gute Kenntnisse</span>
+							<h3>HTML</h3>
+							<p data-i18n="skills.htmlDescription">Ich strukturiere Webseiten mit übersichtlichem, semantischem HTML.</p>
+						</article>
+						<article class="skill-card">
+							<span class="skill-level" data-i18n="skills.good">Gute Kenntnisse</span>
+							<h3>CSS</h3>
+							<p data-i18n="skills.cssDescription">Ich gestalte Webseiten und passe das Design an verschiedene Bildschirmgrössen an.</p>
+						</article>
+						<article class="skill-card">
+							<span class="skill-level" data-i18n="skills.good">Gute Kenntnisse</span>
+							<h3>CSS Grid</h3>
+							<p data-i18n="skills.gridDescription">Ich erstelle strukturierte, responsive Layouts mit Zeilen und Spalten.</p>
+						</article>
+						<article class="skill-card">
+							<span class="skill-level" data-i18n="skills.good">Gute Kenntnisse</span>
+							<h3>Flexbox</h3>
+							<p data-i18n="skills.flexDescription">Ich ordne Elemente flexibel an und richte sie passend im Layout aus.</p>
+						</article>
+						<article class="skill-card">
+							<span class="skill-level" data-i18n="skills.web">Webentwicklung</span>
+							<h3>JavaScript</h3>
+							<p data-i18n="skills.jsDescription">Ich nutze JavaScript für Interaktionen in meinen Webprojekten.</p>
+						</article>
+						<article class="skill-card">
+							<span class="skill-level" data-i18n="skills.nineMonths">9 Monate Praxis</span>
+							<h3>React</h3>
+							<p data-i18n="skills.reactDescription">Ich habe neun Monate mit React gearbeitet und dabei praktische Erfahrung gesammelt.</p>
+						</article>
+						<article class="skill-card">
+							<span class="skill-level" data-i18n="skills.sixMonths">6 Monate Praxis</span>
+							<h3>Next.js</h3>
+							<p data-i18n="skills.nextDescription">Ich habe sechs Monate mit Next.js gearbeitet und mein Wissen in Projekten angewendet.</p>
+						</article>
+						<article class="skill-card">
+							<span class="skill-level" data-i18n="skills.school">In der Schule gelernt</span>
+							<h3>SQL</h3>
+							<p data-i18n="skills.sqlDescription">Ich habe SQL und den Umgang mit relationalen Datenbanken in der Schule gelernt.</p>
+						</article>
+						<article class="skill-card skill-card-learning">
+							<span class="skill-level" data-i18n="skills.currentProject">Aktuell im Projekt</span>
+							<h3>Java</h3>
+							<p data-i18n="skills.javaDescription">Ich lerne Java in meinem aktuellen Projekt und vertiefe mein Wissen durch die Praxis.</p>
+						</article>
+						<article class="skill-card">
+							<span class="skill-level" data-i18n="skills.basics">Grundlagen</span>
+							<h3>Angular</h3>
+							<p data-i18n="skills.angularDescription">Ich kenne die Grundlagen von Angular und habe erste Einblicke in das Framework.</p>
+						</article>
+						<article class="skill-card skill-card-learning">
+							<span class="skill-level" data-i18n="skills.currentProject">Aktuell im Projekt</span>
+							<h3>Vue.js</h3>
+							<p data-i18n="skills.vueDescription">Ich arbeite aktuell mit Vue.js und baue meine Kenntnisse im Projekt weiter aus.</p>
+						</article>
+						<article class="skill-card">
+							<span class="skill-level" data-i18n="skills.basics">Grundlagen</span>
+							<h3>C#</h3>
+							<p data-i18n="skills.csharpDescription">Ich habe die Grundlagen von C# in der Schule kennengelernt.</p>
+						</article>
+						<article class="skill-card">
+							<span class="skill-level" data-i18n="skills.school">In der Schule gelernt</span>
+							<h3 data-i18n="skills.network">Netzwerke</h3>
+							<p data-i18n="skills.networkDescription">Ich habe in der Schule Grundlagen der Netzwerktechnik erarbeitet.</p>
+						</article>
+						<article class="skill-card">
+							<span class="skill-level" data-i18n="skills.course">Im ÜK gelernt</span>
+							<h3>Linux</h3>
+							<p data-i18n="skills.linuxDescription">Ich habe den Umgang mit Linux als Betriebssystem im überbetrieblichen Kurs (ÜK) gelernt.</p>
+						</article>
+						<article class="skill-card">
+							<span class="skill-level" data-i18n="skills.course">Im ÜK gelernt</span>
+							<h3>Windows</h3>
+							<p data-i18n="skills.windowsDescription">Ich habe im überbetrieblichen Kurs (ÜK) Kenntnisse im Umgang mit Windows erworben.</p>
+						</article>
+					</div>
+				</section>
+
+				<section class="skill-group" aria-labelledby="soft-skills-title">
+					<div class="skill-group-header">
+						<span class="skill-group-number" aria-hidden="true">02</span>
+						<div>
+							<h2 id="soft-skills-title">Soft Skills</h2>
+							<p data-i18n="skills.softIntro">So gehe ich Aufgaben an und arbeite mit anderen zusammen.</p>
+						</div>
+					</div>
+					<div class="skills-grid soft-skills-grid">
+						<article class="skill-card">
+							<h3 data-i18n="skills.team">Teamfähig</h3>
+							<p data-i18n="skills.teamDescription">Ich arbeite gerne mit anderen zusammen und bringe mich aktiv ins Team ein.</p>
+						</article>
+						<article class="skill-card">
+							<h3 data-i18n="skills.independent">Selbstständig</h3>
+							<p data-i18n="skills.independentDescription">Ich gehe Aufgaben eigenständig an und übernehme Verantwortung für meine Arbeit.</p>
+						</article>
+						<article class="skill-card">
+							<h3 data-i18n="skills.helpful">Hilfsbereit</h3>
+							<p data-i18n="skills.helpfulDescription">Ich unterstütze andere bei Fragen und suche gemeinsam mit ihnen nach Lösungen.</p>
+						</article>
+						<article class="skill-card">
+							<h3 data-i18n="skills.motivated">Motiviert</h3>
+							<p data-i18n="skills.motivatedDescription">Ich bringe mich mit Engagement ein und bleibe auch bei Herausforderungen dran.</p>
+						</article>
+						<article class="skill-card">
+							<h3 data-i18n="skills.learning">Lernbereit</h3>
+							<p data-i18n="skills.learningDescription">Ich bin offen für Neues, nehme Feedback an und entwickle meine Fähigkeiten weiter.</p>
+						</article>
+					</div>
+				</section>
 			</section>
 		</main>
 
@@ -77,7 +185,6 @@
 								reshad.mandozai@swisscom.com
 							</a>
 						</li>
-						<li data-i18n="footer.location">Stadt, Deutschland</li>
 						<li>
 							<a
 								href="https://neli.swisscom.com/profile/%5Bme%5D/detail?activeTab=info"
