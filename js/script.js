@@ -13,41 +13,6 @@ navLinks.querySelectorAll('a').forEach((link) => {
 	});
 });
 
-const sections = document.querySelectorAll('main > section');
-const navAnchors = document.querySelectorAll('.nav-links a');
-
-const showSection = (id) => {
-	const target = document.getElementById(id);
-	if (!target) return;
-
-	sections.forEach((section) => {
-		section.classList.toggle('active', section === target);
-	});
-
-	navAnchors.forEach((anchor) => {
-		anchor.classList.toggle(
-			'current',
-			anchor.getAttribute('href') === `#${id}`,
-		);
-	});
-};
-
-// Klick auf Navigation, Logo oder Buttons mit [data-nav]
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-	link.addEventListener('click', (e) => {
-		const id = link.getAttribute('href').slice(1);
-		if (document.getElementById(id)) {
-			e.preventDefault();
-			showSection(id);
-			history.replaceState(null, '', `#${id}`);
-		}
-	});
-});
-
-// Startzustand: Sektion aus der URL oder Home
-const startId = location.hash.slice(1) || 'home';
-showSection(document.getElementById(startId) ? startId : 'home');
-
 const themeToggle = document.getElementById('themeToggle');
 
 const savedTheme = localStorage.getItem('theme') || 'dark';
@@ -70,7 +35,7 @@ const setError = (id, msg) => {
 
 const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-contactForm.addEventListener('submit', (e) => {
+contactForm?.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	const name = document.getElementById('name');

@@ -1,19 +1,34 @@
 /* Standard = Dark Mode */
 :root {
-	--bg: #0f172a;
-	--nav-bg: rgba(15, 23, 42, 0.85);
-	--text: #f1f5f9;
+	--bg: #0b1120;
+	--surface: #111a2e;
+	--nav-bg: rgba(11, 17, 32, 0.85);
+	--text: #e2e8f0;
+	--muted: #94a3b8;
 	--accent: #38bdf8;
-	--border: rgba(255, 255, 255, 0.08);
+	--accent-soft: rgba(56, 189, 248, 0.12);
+	--on-accent: #0b1120;
+	--border: rgba(148, 163, 184, 0.15);
+	--shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.5);
 	--nav-height: 70px;
 }
 
 [data-theme='light'] {
-	--bg: #f8fafc;
-	--nav-bg: rgba(248, 250, 252, 0.85);
+	--bg: #f4f6fb;
+	--surface: #ffffff;
+	--nav-bg: rgba(255, 255, 255, 0.85);
 	--text: #0f172a;
-	--accent: #0284c7;
-	--border: rgba(0, 0, 0, 0.1);
+	--muted: #475569;
+	--accent: #2563eb;
+	--accent-soft: rgba(37, 99, 235, 0.1);
+	--on-accent: #ffffff;
+	--border: rgba(15, 23, 42, 0.1);
+	--shadow: 0 10px 30px -12px rgba(15, 23, 42, 0.15);
+}
+
+*:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 3px;
 }
 
 * {
@@ -26,6 +41,9 @@ body {
 	font-family: 'Segoe UI', system-ui, sans-serif;
 	background: var(--bg);
 	color: var(--text);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	transition:
 		background 0.3s ease,
 		color 0.3s ease;
@@ -106,13 +124,8 @@ header {
 	width: 100%;
 }
 
-/* ===== Sektionen umschalten ===== */
+/* ===== Seiteneinblendung ===== */
 main > section {
-	display: none;
-}
-
-main > section.active {
-	display: block;
 	animation: fadeIn 0.3s ease;
 }
 
@@ -153,7 +166,7 @@ main > section.active {
 .btn-primary {
 	display: inline-block;
 	background: var(--accent);
-	color: #0f172a;
+	color: var(--on-accent);
 	text-decoration: none;
 	border-radius: 8px;
 	padding: 0.8rem 2rem;
@@ -318,7 +331,8 @@ main > section.active {
 }
 
 .project-card {
-	background: var(--nav-bg);
+	background: var(--surface);
+	box-shadow: var(--shadow);
 	border: 1px solid var(--border);
 	border-radius: 12px;
 	padding: 1.75rem;
@@ -342,7 +356,7 @@ main > section.active {
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	color: var(--accent);
-	background: rgba(56, 189, 248, 0.1);
+	background: var(--accent-soft);
 	padding: 0.25rem 0.7rem;
 	border-radius: 999px;
 }
@@ -403,7 +417,7 @@ main > section.active {
 }
 
 .skill-chip {
-	background: var(--nav-bg);
+	background: var(--surface);
 	border: 1px solid var(--border);
 	border-radius: 999px;
 	padding: 0.5rem 1.1rem;
@@ -467,7 +481,7 @@ main > section.active {
 
 .form-group input,
 .form-group textarea {
-	background: var(--nav-bg);
+	background: var(--surface);
 	border: 1px solid var(--border);
 	border-radius: 8px;
 	padding: 0.75rem 1rem;
@@ -496,7 +510,7 @@ main > section.active {
 .btn-submit {
 	align-self: flex-start;
 	background: var(--accent);
-	color: #0f172a;
+	color: var(--on-accent);
 	border: none;
 	border-radius: 8px;
 	padding: 0.8rem 2rem;
@@ -524,7 +538,8 @@ main > section.active {
 
 /* Kontakt-Infos */
 .contact-info {
-	background: var(--nav-bg);
+	background: var(--surface);
+	box-shadow: var(--shadow);
 	border: 1px solid var(--border);
 	border-radius: 12px;
 	padding: 2rem;
@@ -600,8 +615,12 @@ a.info-item:hover {
 	}
 }
 
+main {
+	flex: 1;
+}
+
 .footer {
-	background: var(--nav-bg);
+	background: var(--surface);
 	border-top: 1px solid var(--border);
 	margin-top: 2rem;
 }
