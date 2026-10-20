@@ -12,23 +12,30 @@
 				<a href="../index.html" class="logo">Reshad</a>
 
 				<ul class="nav-links" id="navLinks">
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="../about/index.html">Über mich</a></li>
-					<li><a href="../projects/index.html">Projekte</a></li>
-					<li><a href="../skills/index.html">Skills</a></li>
-					<li><a href="index.html" class="current">Kontakt</a></li>
+					<li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+					<li><a href="../about/index.html" data-i18n="nav.about">Über mich</a></li>
+					<li><a href="../projects/index.html" data-i18n="nav.projects">Projekte</a></li>
+					<li><a href="../skills/index.html" data-i18n="nav.skills">Skills</a></li>
+					<li><a href="index.html" class="current" data-i18n="nav.contact">Kontakt</a></li>
 				</ul>
 
 				<div class="nav-actions">
+					<select class="language-select" id="languageSelect" aria-label="Sprache auswählen">
+						<option value="it">IT</option>
+						<option value="en">EN</option>
+						<option value="de">DE</option>
+						<option value="fr">FR</option>
+					</select>
 					<button
 						class="theme-toggle"
 						id="themeToggle"
-						aria-label="Farbmodus wechseln">
-						<span class="icon-sun">Light</span>
-						<span class="icon-moon">Dark</span>
+						aria-label="Farbmodus wechseln"
+						data-i18n-aria-label="theme.toggle">
+						<span class="icon-sun" data-i18n="theme.light">Light</span>
+						<span class="icon-moon" data-i18n="theme.dark">Dark</span>
 					</button>
 
-					<button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+					<button class="hamburger" id="hamburger" aria-label="Menü öffnen" data-i18n-aria-label="nav.openMenu">
 						<span></span>
 						<span></span>
 						<span></span>
@@ -40,67 +47,70 @@
 		<main>
 			<section id="contact" class="contact">
 				<div class="contact-header">
-					<h2>Kontakt</h2>
-					<p>Lass uns zusammenarbeiten! Schreib mir gerne eine Nachricht.</p>
+					<h2 data-i18n="contact.title">Kontakt</h2>
+					<p data-i18n="contact.intro">Lass uns zusammenarbeiten! Schreib mir gerne eine Nachricht.</p>
 				</div>
 
 				<div class="contact-grid">
 					<form class="contact-form" id="contactForm" novalidate>
 						<div class="form-group">
-							<label for="name">Dein Name</label>
+							<label for="name" data-i18n="contact.name">Dein Name</label>
 							<input
 								type="text"
 								id="name"
 								name="name"
 								placeholder="Max Mustermann"
+								data-i18n-placeholder="contact.namePlaceholder"
 								required />
 							<span class="error-message" id="nameError"></span>
 						</div>
 
 						<div class="form-group">
-							<label for="email">Deine E-Mail</label>
+							<label for="email" data-i18n="contact.email">Deine E-Mail</label>
 							<input
 								type="email"
 								id="email"
 								name="email"
-								placeholder="max@beispiel.de"
+								placeholder="max@example.com"
+								data-i18n-placeholder="contact.emailPlaceholder"
 								required />
 							<span class="error-message" id="emailError"></span>
 						</div>
 
 						<div class="form-group">
-							<label for="message">Deine Nachricht</label>
+							<label for="message" data-i18n="contact.message">Deine Nachricht</label>
 							<textarea
 								id="message"
 								name="message"
 								rows="5"
 								placeholder="Deine Nachricht..."
+								data-i18n-placeholder="contact.messagePlaceholder"
 								required></textarea>
 							<span class="error-message" id="messageError"></span>
 						</div>
 
-						<button type="submit" class="btn-submit">Senden &rarr;</button>
+						<button type="submit" class="btn-submit" data-i18n="contact.submit">Senden &rarr;</button>
 						<p class="form-status" id="formStatus"></p>
 					</form>
 
 					<aside class="contact-info">
-						<h3>Schreib mir</h3>
+						<h3 data-i18n="contact.writeMe">Schreib mir</h3>
 
 						<a href="mailto:reshad.mandozai@swisscom.com" class="info-item">
 							<span>
-								<strong>E-Mail</strong><br />
+								<strong data-i18n="contact.email">E-Mail</strong><br />
 								reshad.mandozai@swisscom.com
 							</span>
 						</a>
 
 						<div class="info-item">
 							<span>
-								<strong>Standort</strong><br />
-								Stadt, Deutschland
+								<strong data-i18n="contact.location">Standort</strong><br />
+								<span data-i18n="footer.location">Stadt, Deutschland</span>
 							</span>
 						</div>
 
-						<h4>Folge mir</h4>
+						<h4 data-i18n="footer.follow">Folge mir</h4>
 						<div class="social-links">
 							<a
 								href="https://www.linkedin.com/in/reshad-mandozai-189538322/"
@@ -122,7 +132,7 @@
 								href="mailto:reshad.mandozai@swisscom.com"
 								class="social-card"
 								aria-label="E-Mail">
-								<small>Mail</small>
+								<small data-i18n="contact.email">E-Mail</small>
 							</a>
 						</div>
 					</aside>
@@ -133,14 +143,14 @@
 		<footer class="footer">
 			<div class="footer-inner">
 				<div class="footer-col">
-					<h4>Kontakt</h4>
+					<h4 data-i18n="footer.contact">Kontakt</h4>
 					<ul>
 						<li>
 							<a href="mailto:reshad.mandozai@swisscom.com">
 								reshad.mandozai@swisscom.com
 							</a>
 						</li>
-						<li>Stadt, Deutschland</li>
+						<li data-i18n="footer.location">Stadt, Deutschland</li>
 						<li>
 							<a
 								href="https://neli.swisscom.com/profile/%5Bme%5D/detail?activeTab=info"
@@ -161,7 +171,7 @@
 				</div>
 
 				<div class="footer-col">
-					<h4>Folge mir</h4>
+					<h4 data-i18n="footer.follow">Folge mir</h4>
 					<div class="footer-social">
 						<a
 							href="https://www.linkedin.com/in/reshad-mandozai-189538322/"
@@ -177,7 +187,7 @@
 							aria-label="GitHub">
 							GH
 						</a>
-						<a href="mailto:reshad.mandozai@swisscom.com" aria-label="E-Mail">
+						<a href="mailto:reshad.mandozai@swisscom.com" aria-label="E-Mail" data-i18n-aria-label="contact.email">
 							✉
 						</a>
 					</div>
@@ -185,7 +195,7 @@
 			</div>
 
 			<div class="footer-bottom">
-				<p>&copy; <span id="year"></span> Reshad. Alle Rechte vorbehalten.</p>
+				<p>&copy; <span id="year"></span> Reshad. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></p>
 			</div>
 		</footer>
 

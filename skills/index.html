@@ -12,23 +12,30 @@
 				<a href="../index.html" class="logo">Reshad</a>
 
 				<ul class="nav-links" id="navLinks">
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="../about/index.html">Über mich</a></li>
-					<li><a href="../projects/index.html">Projekte</a></li>
-					<li><a href="index.html" class="current">Skills</a></li>
-					<li><a href="../contact/index.html">Kontakt</a></li>
+					<li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+					<li><a href="../about/index.html" data-i18n="nav.about">Über mich</a></li>
+					<li><a href="../projects/index.html" data-i18n="nav.projects">Projekte</a></li>
+					<li><a href="index.html" class="current" data-i18n="nav.skills">Skills</a></li>
+					<li><a href="../contact/index.html" data-i18n="nav.contact">Kontakt</a></li>
 				</ul>
 
 				<div class="nav-actions">
+					<select class="language-select" id="languageSelect" aria-label="Sprache auswählen">
+						<option value="it">IT</option>
+						<option value="en">EN</option>
+						<option value="de">DE</option>
+						<option value="fr">FR</option>
+					</select>
 					<button
 						class="theme-toggle"
 						id="themeToggle"
-						aria-label="Farbmodus wechseln">
-						<span class="icon-sun">Light</span>
-						<span class="icon-moon">Dark</span>
+						aria-label="Farbmodus wechseln"
+						data-i18n-aria-label="theme.toggle">
+						<span class="icon-sun" data-i18n="theme.light">Light</span>
+						<span class="icon-moon" data-i18n="theme.dark">Dark</span>
 					</button>
 
-					<button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+					<button class="hamburger" id="hamburger" aria-label="Menü öffnen" data-i18n-aria-label="nav.openMenu">
 						<span></span>
 						<span></span>
 						<span></span>
@@ -40,8 +47,8 @@
 		<main>
 			<section id="skills" class="skills">
 				<div class="skills-header">
-					<h2>Skills</h2>
-					<p>Technologien und Sprachen, mit denen ich arbeite.</p>
+					<h2 data-i18n="skills.title">Skills</h2>
+					<p data-i18n="skills.intro">Technologien und Sprachen, mit denen ich arbeite.</p>
 				</div>
 
 				<div class="skills-grid">
@@ -55,7 +62,7 @@
 					<span class="skill-chip">Java</span>
 					<span class="skill-chip">Angular</span>
 					<span class="skill-chip">Vue</span>
-					<span class="skill-chip">C# (Grundlagen)</span>
+					<span class="skill-chip" data-i18n="skills.csharp">C# (Grundlagen)</span>
 				</div>
 			</section>
 		</main>
@@ -63,14 +70,14 @@
 		<footer class="footer">
 			<div class="footer-inner">
 				<div class="footer-col">
-					<h4>Kontakt</h4>
+					<h4 data-i18n="footer.contact">Kontakt</h4>
 					<ul>
 						<li>
 							<a href="mailto:reshad.mandozai@swisscom.com">
 								reshad.mandozai@swisscom.com
 							</a>
 						</li>
-						<li>Stadt, Deutschland</li>
+						<li data-i18n="footer.location">Stadt, Deutschland</li>
 						<li>
 							<a
 								href="https://neli.swisscom.com/profile/%5Bme%5D/detail?activeTab=info"
@@ -91,7 +98,7 @@
 				</div>
 
 				<div class="footer-col">
-					<h4>Folge mir</h4>
+					<h4 data-i18n="footer.follow">Folge mir</h4>
 					<div class="footer-social">
 						<a
 							href="https://www.linkedin.com/in/reshad-mandozai-189538322/"
@@ -107,7 +114,7 @@
 							aria-label="GitHub">
 							GH
 						</a>
-						<a href="mailto:reshad.mandozai@swisscom.com" aria-label="E-Mail">
+						<a href="mailto:reshad.mandozai@swisscom.com" aria-label="E-Mail" data-i18n-aria-label="contact.email">
 							✉
 						</a>
 					</div>
@@ -115,7 +122,7 @@
 			</div>
 
 			<div class="footer-bottom">
-				<p>&copy; <span id="year"></span> Reshad. Alle Rechte vorbehalten.</p>
+				<p>&copy; <span id="year"></span> Reshad. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></p>
 			</div>
 		</footer>
 
